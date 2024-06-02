@@ -862,6 +862,359 @@ right: -85px;
             position: relative;
             top: 50px;
            }
+
+           #new-section {
+  background-color: #2D2D2D; /* Color aproximado en hexadecimal */
+  color: var(--color-text-bright);
+  padding: 4rem;
+  text-align: center;
+  border-top: 2px solid var(--color-text);
+ height: 900px;
+}
+
+#star-products {
+    background-color:oklch(17% 0.011 248);
+    color: var(--color-text-bright);
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid var(--color-text);
+    margin-top: 2rem;
+}
+
+#star-products .product {
+    display: inline-block;
+    width: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--color-text);
+    border-radius: 8px;
+}
+
+#star-products .product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#contact-form {
+    background-color: var(--color-background);
+    color: var(--color-text-bright);
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid var(--color-text);
+   
+}
+
+#contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-text);
+    border-radius: 4px;
+}
+
+#contact-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-accent);
+    color: var(--color-text-bright);
+    border: none;
+    border-radius: 4px;
+      cursor: pointer;
+}  
+.rig{
+
+
+  max-width: 80ch;
+  position: relative;
+  left: 50%;
+  z-index: 10;
+
+}
+
+div {
+  border-radius: 20px;
+}
+.caja {
+  position: relative;
+  left: 35%;
+  z-index: 10;
+  background: #ec407a;
+  width: 180px;
+  height: 350px;
+  padding: 20px;
+  margin: 150px auto;
+  position: relative;
+  top: -90px;
+  border-radius: 30px;
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.4);
+}
+
+.altavoz {
+  background: black;
+  width: 30px;
+  margin: 0 auto;
+  padding: 2px;
+}
+
+.pantalla {
+  background: #e1f5fe;
+  margin-top: 10px;
+  padding: 20px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.home {
+  background: white;
+  width: 30px;
+  height: 30px;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+.caja:hover {
+  background: #63b5e5;
+  width: 320px;
+  height: 450px;
+}
+
+.caja:hover .pantalla {
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvSIdsXFBWHQ9EnJpzLUvRZgXtlzkS023sU_Gt60RqFWJ9xevh&s') center center;
+  height: 350px;
+}
+
+body:active .caja {
+  transform: rotate(360deg);
+  background: black;
+}
+
+body:active .caja * {
+  border-color: white;
+}
+
+.caja,
+.pantalla {
+  transition: 0.3s;
+}
+
+.caja:active .pantalla {
+  background: url('https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/3e/79/c0/3e79c02c-5481-9185-465d-21e762320d5f/mzl.xmligeio.jpg/300x0w.jpg') center center no-repeat; 
+  }
+
+
+
+
+
+
+
+
+
+.container{
+  top: -800px;
+  width: 800px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  
+}
+
+.container .card{
+  position: relative;
+}
+
+.container .card .face{
+  width:300px;
+  height: 200px;
+  transition:.4s;
+  
+}
+
+.container .card .face.face1{
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+  transform: translateY(0);
+  box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+   
+}
+
+
+.container .card .face.face1 .content{
+  opacity: .2;
+  transition:  0.5s;
+  text-align: center;
+  
+   
+  
+  
+ 
+
+}
+
+.container .card:hover .face.face1 .content{
+  opacity: 1;
+ 
+}
+
+.container .card .face.face1 .content i{
+  font-size: 3em;
+  color: white;
+  display: inline-block;
+   
+}
+
+.container .card .face.face1 .content h3{
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  
+
+}
+
+.container .card .face.face1 .content a{
+   transition: .5s;
+}
+
+.container .card .face.face2{
+   position: relative;
+   background: whitesmoke;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,.8);
+  transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+
+
+}
+
+.container .card .face.face2 .content p, a{
+  font-size: 10pt;
+  margin: 0 ;
+  padding: 0;
+  color:#333;
+}
+
+.container .card .face.face2 .content a{
+  text-decoration:none;
+  color: black;
+  box-sizing: border-box;
+  outline : 1px dashed #333;
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+
+.container .card .face.face2 .content a:hover{
+  background: #333 ;
+  color: whitesmoke; 
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#arqui{
+
+width: 20%;
+
+
+}
+
+#benee{
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 30px;
+  left: 20%;
+  position: relative;
+  float: inline-start;
+  color: black;
+}
+#diseñoe{
+  padding: 10px;
+  border-radius: 10px;
+  left: 20%;
+  
+}
+#nexus {
+    animation: moveDown 2s ease-in-out infinite;
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(-100px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+.animated-image {
+    animation: moveDown 2s ease-in-out infinite;
+ 
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 768px) {
            
 
@@ -891,10 +1244,11 @@ width: 20%;
 }
 #propuesta {
   position: relative;
-  top: 50px;
+
     background-image: linear-gradient( purple, black);
     position: relative;
     top: 80px;
+    width: 250px;
     padding: 20px; /* Añade un relleno para separar el contenido del borde */
     border-radius: 10px; /* Añade bordes redondeados */
     color: white; /* Cambia el color del texto a blanco para que contraste */
@@ -959,10 +1313,301 @@ right: -26%;
            }
 
 
+.rig{
+
+    display: none;
+
+  max-width: 80ch;
+  position: relative;
+  left: -10%;
+  z-index: 10;
+
+}
+
+div {
+  border-radius: 20px;
+}
+.caja {
+      display: none;
+
+  position: relative;
+  left: 35%;
+  z-index: 10;
+  background: #ec407a;
+  width: 180px;
+  height: 350px;
+  padding: 20px;
+  margin: 150px auto;
+  position: relative;
+  top: -90px;
+  border-radius: 30px;
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.4);
+}
+
+.altavoz {
+      display: none;
+
+  background: black;
+  width: 30px;
+  margin: 0 auto;
+  padding: 2px;
+}
+
+.pantalla {
+      display: none;
+
+  background: #e1f5fe;
+  margin-top: 10px;
+  padding: 20px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.home {
+  background: white;
+  width: 30px;
+  height: 30px;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+.caja:hover {
+  background: #63b5e5;
+  width: 320px;
+  height: 450px;
+}
+
+.caja:hover .pantalla {
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvSIdsXFBWHQ9EnJpzLUvRZgXtlzkS023sU_Gt60RqFWJ9xevh&s') center center;
+  height: 350px;
+}
+
+body:active .caja {
+  transform: rotate(360deg);
+  background: black;
+}
+
+body:active .caja * {
+  border-color: white;
+}
+
+.caja,
+.pantalla {
+  transition: 0.3s;
+}
+
+.caja:active .pantalla {
+  background: url('https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/3e/79/c0/3e79c02c-5481-9185-465d-21e762320d5f/mzl.xmligeio.jpg/300x0w.jpg') center center no-repeat; 
+  }
+
+
+
+
+
+
+
+
+
+.container{
+  top: -800px;
+  width:100px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  
+}
+
+.container .card{
+    display: none;
+
+  position: relative;
+}
+
+.container .card .face{
+
+  width:300px;
+  height: 200px;
+  transition:.4s;
+  
+  
+}
+
+.container .card .face.face1{
+  display: none;
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+  transform: translateY(0);
+  box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+   
+}
+
+
+.container .card .face.face1 .content{
+  opacity: .2;
+  transition:  0.5s;
+  text-align: center;
+  
+   
+  
+  
+ 
+
+}
+
+.container .card:hover .face.face1 .content{
+  opacity: 1;
+ 
+}
+
+.container .card .face.face1 .content i{
+  font-size: 3em;
+  color: white;
+  display: inline-block;
+   
+}
+
+.container .card .face.face1 .content h3{
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  
+
+}
+
+.container .card .face.face1 .content a{
+   transition: .5s;
+}
+
+.container .card .face.face2{
+   position: relative;
+   background: whitesmoke;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,.8);
+  transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+
+
+}
+
+.container .card .face.face2 .content p, a{
+  font-size: 10pt;
+  margin: 0 ;
+  padding: 0;
+  color:#333;
+}
+
+.container .card .face.face2 .content a{
+  text-decoration:none;
+  color: black;
+  box-sizing: border-box;
+  outline : 1px dashed #333;
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+
+.container .card .face.face2 .content a:hover{
+  background: #333 ;
+  color: whitesmoke; 
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#arqui{
+
+width: 20%;
+
+
+}
+
+#benee{
+  
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 30px;
+  left: -20%;
+  position: relative;
+  float: inline-start;
+  color: black;
+}
+#diseñoe{
+ 
+  border-radius: 10px;
+  left: -10%;
+  
+}
+#nexus {
+  top: -800px;
+    animation: moveDown 2s ease-in-out infinite;
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(-100px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+.animated-image {
+    animation: moveDown 2s ease-in-out infinite;
+ 
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+
+
 
 
            }
-         
+
+
+
+
+
+
 </style>
 <body>
     <div class="warning">Your browser doesn't support scroll animations. This demo will not work.</div>
@@ -982,8 +1627,8 @@ right: -26%;
         </label>
 
         <ul class="nav-list">
-          <li style="--index: 0"><a href="#">Home</a></li>
-          <li style="--index: 1"><a href="#">portafolio</a></li>
+          <li style="--index: 0"><a href="/principal">Home</a></li>
+          <li style="--index: 1"><a href="/servicios">Servicios</a></li>
           <li style="--index: 2"><a href="#">Projects</a></li>
           <li style="--index: 3"><a href="#">About</a></li>
           <li style="--index: 4"><a href="#">Blog</a></li>
@@ -997,10 +1642,10 @@ right: -26%;
 <div class="left-content">
     <p id="propuesta"> 
         <span style="color: #B2FFFF; font-size: 1.5em;">&#8227;</span> Hosting+Dominio <br>
-        <span style="color: #B2FFFF; font-size: 1.5em;">&#8227;</span> Hasta 10 páginas internas más el home <br>
-        <span style="color: #B2FFFF; font-size: 1.5em;">&#8227;</span> Formulario de contacto <br>
+        <span style="color: #B2FFFF; font-size: 1.5em;">&#8227;</span> Tu nueva página web será compatible con todos los dispositivos móviles <br>
+        <span style="color: #B2FFFF; font-size: 1.5em;">&#8227;</span>Tu página web estará 24/7 sin errores, ni fallas<br>
         <span style="color: #B2FFFF; font-size: 1.5em;">&#8227;</span> Adaptación en dispositivos móviles <br>
-        <span style="color: #B2FFFF; font-size: 1.5em;">&#8227;</span> Botones de contacto a cualquier red social <br>
+        <span style="color: #B2FFFF; font-size: 1.5em;">&#8227;</span>  Diseño web corporativo, tiendas virtuales, y páginas web personales <br>
         <span style="color: #B2FFFF; font-size: 1.5em;">&#8227;</span> Todos los productos son 100% personalizados <br>
      
      
@@ -1010,9 +1655,9 @@ right: -26%;
       
         
     </p>
-       <img id="diseño" src="imagenes/diseño.jpg" alt="">
-                    <img id="desarrollo" src="imagenes/desarrollo.jpg" alt=""><br>
-                                    <img id="soluciones" src="imagenes/solucion.jpg" alt="">
+       <img id="diseño"   class="animated-image" src="imagenes/diseño.jpg" alt="">
+                    <img id="desarrollo"   class="animated-image" src="imagenes/desarrollo.jpg" alt=""><br>
+                                    <img id="soluciones"   class="animated-image" src="imagenes/solucion.jpg" alt="">
 </div>
 
 
@@ -1026,8 +1671,121 @@ right: -26%;
     </div>
   </main>
 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <section id="new-section">
+<h3 id="benee">BENEFICIOS</h3>
+
+    <div class="rig">
+
+    <h2 id="diseñoe" >DISEÑO DE PAGINAS WEB </h2>
+   </div>
+
+<div class="caja">
+ <div class="altavoz"></div>
+ <div class="pantalla"></div>
+ <div class="home"></div> <br>
+
+
+
+
+</div>
+  <div class="container">
+     <div class="card">
+       <div class="face face1">
+         <div class="content">
+            <i class="fab fa-windows"></i>  
+
+            <img  id="arqui" src="imagenes/diseno-web.png" alt="">          
+                                <h3>ARQUITECTURA WEB</h3>
+
+         </div>
+       </div>
+       <div class="face face2">
+         <div class="content">
+          <br>
+           <p> <strong>Tendrá su respectiva Home, galería, zona de contacto, blog de noticias o notas corporativas, y demás.</strong> </p>
+          
+         </div>
+         
+       </div>
+    </div>
+    
+      <div class="card">
+       <div class="face face1">
+         <div class="content">
+            <i class="fab fa-windows"></i>  
+
+           
+            <img  id="arqui" src="imagenes/seo (1).png" alt="">          
+                                <h3>SEO</h3>
+
+         </div>
+       </div>
+       <div class="face face2">
+         <div class="content">
+          <br>
+           <p> <strong>Tu web cumplirá altos estándares y estará lista para posicionarse en buscadores como Google, Bing y Yahoo.</strong> </p>
+         </div>
+       </div>
+    </div>
+    
+    
+      
+      <div class="card">
+       <div class="face face1">
+         <div class="content">
+            <i class="fab fa-windows"></i>  
+
+           
+            <img  id="arqui" src="imagenes/operador.png" alt="">          
+                                <h3>Asesoría en Redacción</h3>
+
+         </div>
+       </div>
+       <div class="face face2">
+         <div class="content">
+          <br>
+           <p> <strong> Si no sabes qué incluir en tu página, te asesoraremos sobre cómo elaborar los textos, te enseñaremos cómo mostrarte de manera interesante.</strong> </p>
+         </div>
+       </div>
+    </div>
+
+     
+      <div class="card">
+       <div class="face face1">
+         <div class="content">
+            <i class="fab fa-windows"></i>  
+
+           
+            <img  id="arqui" src="imagenes/apoyo-tecnico.png" alt="">          
+                                <h3>Soporte 24/7</h3>
+
+         </div>
+       </div>
+       <div class="face face2">
+         <div class="content">
+          <br>
+           <p> <strong>Las 24 horas del día y los 7 días de la semana, nos encargaremos de que tu web esté siempre disponible sin errores.</strong> </p>
+         </div>
+       </div>
+    </div>
+
+
+
+    
+  </section>
+
+
+
 <footer>
-    <p>DERECHOS RESERVADOS <a href="https://cdpn.io/pen/debug/gOEQmVW/#probably-bug" target="_top">NEXUS INNOVATIONS</a>.</p>
+    <p>DERECHOS RESERVADOS <a href="" target="_top">NEXUS INNOVATIONS</a>.</p>
        <div class="redes">
         <a href="https://www.facebook.com/profile.php?id=61558620302080&mibextid=LQQJ4d" target="_blank">
             <img  id="facebook" src="imagenes/facebook (1).png" alt="Facebook" class="social-logo">
@@ -1040,6 +1798,5 @@ right: -26%;
         </a>
     </div>
 </footer>
-
 </body>
 </html>

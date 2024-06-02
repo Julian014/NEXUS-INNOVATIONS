@@ -39,6 +39,11 @@ app.get('/principal', (req, res) => {
 
 
 
+// Ruta para la página principal
+app.get('/servicios', (req, res) => {
+    res.render('principal/portafolio'); // Renderiza la vista 'home.hbs'
+});
+
 
 
 
